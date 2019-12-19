@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -24,12 +25,28 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"] // (*)
-      }
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+            },
+          },
+        ],
+      },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html"
+    }),
+    new CompressionPlugin({
+      test: /\.js(\?.*)?$/i,
     })
   ]
 };

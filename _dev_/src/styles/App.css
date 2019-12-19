@@ -1,5 +1,5 @@
 @import url(~antd/dist/antd.css);
-.cr__close {
+.cr__close-btn {
   position: absolute;
   z-index: 99999;
   right: 12px;
@@ -7,8 +7,39 @@
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.85); }
 
+.cr__pl-tab__edit-btn {
+  color: #faad14; }
+.cr__pl-tab__del-btn {
+  color: #ff4d4f; }
+
+.cr__footer__cancel-btn {
+  float: left;
+  color: #f81d22;
+  padding: 0; }
+.cr__footer__update-btn {
+  float: right; }
+
+.cr__del-user-btn {
+  color: #ff4d4f; }
+
+.cr .ant-tabs-ink-bar {
+  display: none !important; }
+.cr .ant-tabs-left-bar {
+  padding: 8px 0; }
+.cr .ant-tabs-content {
+  padding: 16px 28px 0; }
+.cr .ant-tabs-content-animated {
+  transition: 0s !important; }
+.cr__field .ant-form-item-label label::after {
+  content: ""; }
+
+.ant-select-dropdown {
+  z-index: 99999; }
+
 .cr {
   /* The Modal (background) */
+  display: none;
+  /* Hidden by default */
   position: fixed;
   /* Stay in place */
   z-index: 9999;
@@ -32,5 +63,90 @@
   margin: auto;
   width: 768px;
   position: relative; }
+
+.cr__info {
+  position: absolute;
+  margin-top: 46px;
+  width: 100%;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e8e8e8; }
+
+.cr__parent-tab > .ant-tabs-content {
+  padding: 0; }
+.cr__parent-tab .ant-tabs-bar {
+  margin-bottom: 54px;
+  border-bottom: 1px solid #32373c; }
+.cr__parent-tab .ant-tabs-bar .ant-tabs-tab {
+  margin-right: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+  border-top: 0;
+  text-transform: uppercase;
+  border-right: 1px solid #e8e8e8; }
+.cr__parent-tab .ant-tabs-bar .ant-tabs-tab-active {
+  min-width: 150px;
+  background-color: #32373c;
+  color: #fff; }
+.cr__parent-tab .ant-tabs-nav-wrap {
+  margin-bottom: 1px; }
+
+.cr__child-tab__title {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 0;
+  padding: 16px 24px; }
+.cr__child-tab .ant-tabs-bar {
+  margin-bottom: 0;
+  border-bottom: none; }
+.cr__child-tab .ant-tabs-bar .ant-tabs-tab {
+  width: 185px;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 8px 24px;
+  text-align: left;
+  border-bottom: 1px solid #e8e8e8;
+  border-right: none;
+  text-transform: none; }
+.cr__child-tab .ant-tabs-bar .ant-tabs-tab:first-child {
+  border-top: 1px solid #e8e8e8; }
+.cr__child-tab .ant-tabs-bar .ant-tabs-tab-active {
+  min-width: auto;
+  width: auto;
+  background-color: #4f5153;
+  color: #fff; }
+
+.cr__body-tab.cr__pl-tab__main {
+  padding: 18px 24px; }
+.cr__body-tab.cr__pl-tab__main .ant-table-body {
+  min-height: 250px; }
+.cr__body-tab .cr__cp-tab__ac-tab__form {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  top: -8px; }
+.cr__body-tab .cr__cp-tab__ac-tab__form .cr__field {
+  flex: 50%; }
+.cr__body-tab .cr__cp-tab__ac-tab__form .cr__field:nth-of-type(3) .ant-list-items {
+  height: 200px;
+  overflow: auto; }
+.cr__body-tab .cr__cp-tab__ac-tab__form .cr__field:nth-of-type(3) .ant-list-items::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5; }
+.cr__body-tab .cr__cp-tab__ac-tab__form .cr__field:nth-of-type(3) .ant-list-items::-webkit-scrollbar-thumb {
+  background-color: #e8e8e8; }
+.cr__body-tab .cr__cp-tab__ac-tab__form .cr__alert {
+  top: 0px;
+  padding: 4px 25px;
+  flex: 100%; }
+.cr__body-tab .cr__cp-tab__ac-tab__form .cr__alert .ant-alert-icon {
+  top: 8px;
+  left: 7px; }
+.cr__body-tab .cr__cp-tab__ac-tab__form .cr__footer {
+  flex: 100%; }
+
+.cr__footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 16px 0;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=App.css.map */

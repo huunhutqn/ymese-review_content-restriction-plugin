@@ -1,0 +1,32 @@
+.cr__child-tab {
+  &__title {
+    border-bottom: 1px solid $border;
+    margin-bottom: 0;
+    padding: 16px 24px;
+  }
+  .ant-tabs {
+    &-bar {
+      margin-bottom: 0;
+      border-bottom: none;
+      & .ant-tabs-tab {
+        width: 185px;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 8px 24px;
+        text-align: left;
+        border-bottom: 1px solid $border;
+        border-right: none;
+        text-transform: none;
+        &:first-child {
+          border-top: 1px solid $border;
+        }
+      }
+      & .ant-tabs-tab-active {
+        min-width: auto;
+        width: auto;
+        background-color: $background_tab_active_child;
+        color: $white;
+      }
+    }
+  }
+}

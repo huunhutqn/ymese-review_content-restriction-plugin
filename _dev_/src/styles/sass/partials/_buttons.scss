@@ -1,8 +1,35 @@
-.cr__close {
+.cr__close-btn {
   position: absolute;
   z-index: 99999;
   right: 12px;
   top: 12px;
   font-size: 1rem;
   color: $text_color;
+}
+
+// private link-list
+.cr__pl-tab {
+  &__edit-btn {
+    color: $yellow;
+  }
+  &__del-btn {
+    color: $red-btn;
+  }
+}
+
+// footer
+.cr__footer {
+  &__cancel-btn {
+    float: left;
+    color: $red;
+    padding: 0;
+  }
+  &__update-btn {
+    float: right;
+  }
+}
+
+// delete user
+.cr__del-user-btn {
+  color: $red-btn;
 }

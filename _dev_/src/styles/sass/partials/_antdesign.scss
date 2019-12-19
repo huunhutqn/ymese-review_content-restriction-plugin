@@ -1,0 +1,32 @@
+.cr {
+  .ant-tabs {
+    &-ink {
+      &-bar {
+        display: none!important;
+      }
+    }
+    &-left {
+      &-bar {
+        padding: 8px 0;
+      }
+    }
+    &-content {
+      padding: 16px 28px 0;
+      &-animated {
+        transition: 0s!important;
+      }
+    }
+  }
+  &__field {
+    .ant-form-item-label {
+      label {
+        &::after {
+          content: ""
+        }
+      }
+    }
+  }
+}
+.ant-select-dropdown {
+  z-index: 99999;
+}

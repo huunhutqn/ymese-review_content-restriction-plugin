@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 
+import ContentProtection from './ContentProtection';
+import PrivateLink from './PrivateLink';
+import Info from './Info';
+
 import { Tabs, Icon } from 'antd';
 
 import '../styles/App.css';
@@ -14,16 +18,14 @@ class App extends Component {
   render() {
     return (
       <div className="cr__main">
-        <a className="cr__close" onClick={ () => this.crClose()}><Icon type="close" /></a>
+        <a className="cr__close-btn" onClick={ () => this.crClose()}><Icon type="close" /></a>
+        <Info />
         <Tabs defaultActiveKey="01" className="cr__parent-tab">
-          <TabPane tab="Content Protection" className="cr__child-tab cr__r-tab" key="01">
-            RestrictionEditor
+          <TabPane tab="Content Protection" className="cr__child-tab cr__cp-tab" key="01">
+            <ContentProtection />
           </TabPane>
-          <TabPane tab="Edit Post" className="cr__child-tab cr__e-tab" key="02">
-            EditPost
-          </TabPane>
-          <TabPane tab="Draft List" className="cr__child-tab cr__d-tab" key="03">
-            DraftList
+          <TabPane tab="Private Link" className="cr__child-tab cr__pl-tab" key="02">
+            <PrivateLink />
           </TabPane>
         </Tabs>
       </div>
