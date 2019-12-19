@@ -1,17 +1,17 @@
-.cr__body-tab {
+.ppp-p__body-tab {
   // min-height: 150px;
-  &.cr__pl-tab__main {
+  &.ppp-p__pl-tab__main {
     padding: 18px 24px;
     .ant-table-body {
       min-height: 250px;
     }
   }
-  .cr__cp-tab__ac-tab__form {
+  .ppp-p__cp-tab__ac-tab__form {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     top: -8px;
-    .cr__field {
+    .ppp-p__field {
       flex: 50%;
       &:nth-of-type(3) {
         .ant-list-items {
@@ -27,7 +27,7 @@
         }
       }
     }
-    .cr__alert {
+    .ppp-p__alert {
       // display: none;
       top: 0px;
       padding: 4px 25px;
@@ -37,7 +37,7 @@
         left: 7px;
       }
     }
-    .cr__footer {
+    .ppp-p__footer {
       flex: 100%;
     }
   }

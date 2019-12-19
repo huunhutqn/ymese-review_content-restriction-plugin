@@ -44,9 +44,9 @@ const columns = [
     key: 'action',
     render: (text, record) => (
       <span>
-        <a data-name={record.name}><Icon className="cr__pl-tab__edit-btn" type="edit" theme="filled" /></a>
+        <a data-name={record.name}><Icon className="ppp-p__pl-tab__edit-btn" type="edit" theme="filled" /></a>
         <Divider type="vertical" />
-        <a><Icon  className="cr__pl-tab__del-btn" type="delete" theme="filled" /></a>
+        <a><Icon  className="ppp-p__pl-tab__del-btn" type="delete" theme="filled" /></a>
       </span>
     ),
   },
@@ -98,14 +98,14 @@ const data = [
 ];
 
 class PrivateLink extends Component {
-  crClose() {
+  ppp_pClose() {
     document.getElementById("content-restriction").style.display = "none";
     return false;
   }
   render() {
     return (
         <Table 
-          className="cr__pl-tab__main cr__body-tab"
+          className="ppp-p__pl-tab__main ppp-p__body-tab"
           columns={columns} dataSource={data} 
           pagination={{ defaultPageSize: 5, showSizeChanger: true, pageSizeOptions: ['5', '10', '15', '20']}}
         />

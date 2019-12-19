@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "cr-bundle.js"
+    filename: "ppp-pop-bundle.js"
   },
   module: {
     rules: [

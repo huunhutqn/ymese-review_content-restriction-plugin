@@ -11,7 +11,7 @@ const { TabPane } = Tabs;
 class ContentProtection extends Component {
   render() {
     return (
-      <div className="cr__cp-tab__main cr__body-tab">
+      <div className="ppp-p__cp-tab__main ppp-p__body-tab">
         <Tabs tabPosition={'left'}>
           <TabPane 
             tab={
@@ -19,7 +19,7 @@ class ContentProtection extends Component {
                 <Icon type="user" /> Access Permisson
               </span>
             }
-            className="cr__cp-tab__child cr__cp-tab__ac-tab" key="1">
+            className="ppp-p__cp-tab__child ppp-p__cp-tab__ac-tab" key="1">
             <AccessPermission />
           </TabPane>
           <TabPane 
@@ -28,7 +28,7 @@ class ContentProtection extends Component {
                 <Icon type="api" /> Referer Link
               </span>
             }
-            className="cr__cp-tab__child cr__cp-tab__rl-tab" key="2">
+            className="ppp-p__cp-tab__child ppp-p__cp-tab__rl-tab" key="2">
             <Referer />
           </TabPane>
           <TabPane 
@@ -37,7 +37,7 @@ class ContentProtection extends Component {
                 <Icon type="cluster" /> IP Restriction
               </span>
             }
-            className="cr__cp-tab__child cr__cp-tab__ir-tab" key="3">
+            className="ppp-p__cp-tab__child ppp-p__cp-tab__ir-tab" key="3">
             <IPRestriction />
           </TabPane>
         </Tabs>

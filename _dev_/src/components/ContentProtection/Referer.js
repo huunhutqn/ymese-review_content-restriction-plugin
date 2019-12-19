@@ -16,7 +16,7 @@ class Referer extends Component {
     // const { getFieldDecorator } = this.props.form;
     return (
       <Form>
-        <Form.Item label="Referer Link Allowed" className="cr__field">
+        <Form.Item label="Referer Link Allowed" className="ppp-p__field">
           <TextArea rows={4} />
         </Form.Item>
         <Footers 

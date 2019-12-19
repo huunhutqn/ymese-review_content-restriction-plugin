@@ -16,7 +16,7 @@ class IPRestriction extends Component {
     // const { getFieldDecorator } = this.props.form;
     return (
       <Form>
-        <Form.Item label="IP Address Banned" className="cr__field">
+        <Form.Item label="IP Address Banned" className="ppp-p__field">
           <TextArea rows={4} />
         </Form.Item>
         <Footers 

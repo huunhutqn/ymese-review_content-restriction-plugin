@@ -1,4 +1,4 @@
-.cr__close-btn {
+.ppp-p__close-btn {
   position: absolute;
   z-index: 99999;
   right: 12px;
@@ -8,7 +8,7 @@
 }
 
 // private link-list
-.cr__pl-tab {
+.ppp-p__pl-tab {
   &__edit-btn {
     color: $yellow;
   }
@@ -18,7 +18,7 @@
 }
 
 // footer
-.cr__footer {
+.ppp-p__footer {
   &__cancel-btn {
     float: left;
     color: $red;
@@ -30,6 +30,6 @@
 }
 
 // delete user
-.cr__del-user-btn {
+.ppp-p__del-user-btn {
   color: $red-btn;
 }
